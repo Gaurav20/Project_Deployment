@@ -1,0 +1,6 @@
+class Place < ActiveRecord::Base
+  attr_accessible :city, :description, :photo_detail, :user
+
+has_attached_file :image
+
+end
