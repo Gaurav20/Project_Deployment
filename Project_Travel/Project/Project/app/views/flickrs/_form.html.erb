@@ -1,0 +1,17 @@
+<%= form_for(@flickr) do |f| %>
+  <% if @flickr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@flickr.errors.count, "error") %> prohibited this flickr from being saved:</h2>
+
+      <ul>
+      <% @flickr.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

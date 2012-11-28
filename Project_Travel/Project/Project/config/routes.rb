@@ -1,4 +1,6 @@
 Project::Application.routes.draw do
+  resources :flickrs
+
   resources :places
 
   devise_for :users
