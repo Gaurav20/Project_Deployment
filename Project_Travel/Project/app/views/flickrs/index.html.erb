@@ -1,0 +1,21 @@
+<h1>Listing flickrs</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @flickrs.each do |flickr| %>
+  <tr>
+    <td><%= link_to 'Show', flickr %></td>
+    <td><%= link_to 'Edit', edit_flickr_path(flickr) %></td>
+    <td><%= link_to 'Destroy', flickr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Flickr', new_flickr_path %>
