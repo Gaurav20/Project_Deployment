@@ -231,6 +231,6 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = "/my_engine/users/auth"
 
 	Warden::Manager.after_authentication do |user,auth,opts|
-	Tweet.get_latest
+	  user.update_attribute(:currently_signed_in, true)
 	end
 end

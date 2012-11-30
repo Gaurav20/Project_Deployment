@@ -1,11 +1,10 @@
 require 'grackle'
 
 class Tweet < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :title, :body, :content, :created
 
- MY_APPLICATION_NAME = "arctickiwi"
-  
-  """Connect to the Twitter API and pull down the latest tweets"""
+ MY_APPLICATION_NAME = "gauravncirl"  
+ 
   def self.get_latest
     tweets = client.statuses.user_timeline? :screen_name => MY_APPLICATION_NAME # hit the API
     tweets.each do |t|
@@ -32,4 +31,4 @@ end
 
 
 
-end
+

@@ -5,4 +5,4 @@ class CreateTweets < ActiveRecord::Migration
       t.datetime :created
     end
     end
-  
+  end
