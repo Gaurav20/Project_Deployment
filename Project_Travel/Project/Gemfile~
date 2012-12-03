@@ -9,7 +9,9 @@ gem 'sqlite3'
 gem 'devise'
 gem 'paperclip'
 gem 'httparty'
-gem 'twitter'
+gem 'grackle'
+gem 'haml'
+ gem 'mugen'
 
 
 
