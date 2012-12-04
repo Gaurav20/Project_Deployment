@@ -2,8 +2,8 @@ class FlickrsController < ApplicationController
   # GET /flickrs
   # GET /flickrs.json
   def index
-    @flickrs = Flickr.all
-Flickr.getPhotos('12345678')
+    flickrs = Flickr.getPhotos('79392001@N05')
+    @photos = flickrs.parsed_response['rsp']['photos']['photo']
 
     respond_to do |format|
       format.html # index.html.erb
