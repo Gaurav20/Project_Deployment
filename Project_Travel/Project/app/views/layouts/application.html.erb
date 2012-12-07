@@ -7,34 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="user_nav">
 
-  <% if user_signed_in? %>
-    Signed in as <%= current_user.email %>. Not you?
-    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
-  <% end %>
-</div>
- 
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, :id => "flash_#{name}" %>
-<% end %>
-
-<% if user_signed_in? %> <br />
-
-<%= link_to 'Places', places_path %>
-<% if current_user.email == "admin@company.com" %>
-	<br>
-	
-<% end %>
-	<%= link_to 'Dashboard', :controller => 'dashboard', :action => 'index'%>
-<% end %>
-
-
-
-
-<%= yield %>
 
 
 <div id="container">
@@ -51,9 +24,37 @@
     
   </div>
   <div id="main">
-    <h2>Spain: How about some sun?</h2>
-    <img src="images/property.jpg" height="227" width="169" alt="" class="alignright" />
-    <p>The first settlers on the Peninsula were the Celts and the Iberians. The first testimonials written about the country date back to this period. It is said that Hispania (the name the Romans used to describe the Peninsula) is a word of Semitic origin from Hispalis (Seville). From the year 1100 A.D. and until the middle of the 3rd century A.D., commercial and cultural contact with high Mediterranean civilisations was held with the Phoenicians and Greek.</p>
+    <div id="user_nav">
+
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+  <% end %>
+</div>
+ 
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+
+<% if user_signed_in? %> <br />
+<%= link_to 'flickrs', flickrs_path %> <br />
+
+<%= link_to 'Places', places_path %>
+<% if current_user.email == "admin@company.com" %>
+	<br>
+	
+<% end %>
+	<%= link_to 'Dashboard', :controller => 'dashboard', :action => 'index'%>
+<% end %>
+
+
+
+
+<%= yield %> 
+
+<br />
 
     <h2>About Travel Web</h2>
 

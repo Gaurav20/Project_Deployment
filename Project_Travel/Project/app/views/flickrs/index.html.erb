@@ -1,11 +1,11 @@
-<h1>Listing flickrs</h1>
+<h4>Listing flickrs</h4>
 
 <ul>
 <% @photos.each do |photo| %>
 <li>
 	<%= photo['id'] %>
    
-<img src= "http://farm<%= photo['farm'] %>.staticflickr.com/<%= photo['server'] %>/<%= photo['id'] %>_<%= photo['secret'] %>_z.jpg" />
+<img src= "http://farm<%= photo['farm'] %>.staticflickr.com/<%= photo['server'] %>/<%= photo['id'] %>_<%= photo['secret'] %>_z.jpg" width="200" height="100" />
 
 
 

@@ -1,4 +1,4 @@
-<h1>Listing places</h1>
+<h4>Listing places</h4>
 
 <table>
   <tr>
@@ -17,6 +17,7 @@
     <td><%= place.city %></td>
     <td><%= place.photo_detail %></td>
     <td><%= place.description %></td>
+
     <td><%= link_to 'Show', place %></td>
    
   </tr>

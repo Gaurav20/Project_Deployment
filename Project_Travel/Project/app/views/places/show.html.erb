@@ -22,9 +22,9 @@
 <% if @place.image? %>
 <%= image_tag @place.image.url %>
 <br />
-<%= link_to @place.image.url, @place.image.url %>
+
 <% end %>
 
 
-<%= link_to 'Edit', edit_place_path(@place) %> |
+ |
 <%= link_to 'Back', places_path %>
