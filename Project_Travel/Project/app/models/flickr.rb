@@ -12,3 +12,4 @@ include HTTParty
       :user_id => uid})
   end
 end
+

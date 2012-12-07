@@ -1,5 +1,7 @@
 class FlickrsController < ApplicationController
-  # GET /flickrs
+before_filter :authenticate_user!  
+
+# GET /flickrs
   # GET /flickrs.json
   def index
     flickrs = Flickr.getPhotos('79392001@N05')
