@@ -1,0 +1,29 @@
+<h4>Listing places</h4>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>City</th>
+    <th>Photo detail</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @places.each do |place| %>
+  <tr>
+    <td><%= place.user %></td>
+    <td><%= place.city %></td>
+    <td><%= place.photo_detail %></td>
+    <td><%= place.description %></td>
+
+    <td><%= link_to 'Show', place %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Place', new_place_path %>

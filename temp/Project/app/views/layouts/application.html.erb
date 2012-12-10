@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<div id="container">
+  <ul id="nav">
+    
+  </ul>
+  <div class="divider"></div>
+  <div id="header">
+    <h1>Travel Web<span>Best choice for travellers</span></h1>
+  </div>
+  <div class="divider"></div>
+  <div id="sidebar">
+    <%= image_tag("property.jpg", :alt => "rss feed") %>
+    
+  </div>
+  <div id="main">
+    <div id="user_nav">
+
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+  <% end %>
+</div>
+ 
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+
+<% if user_signed_in? %> <br />
+<%= link_to 'flickrs', flickrs_path %> <br />
+
+<%= link_to 'Places', places_path %>
+<% if current_user.email == "admin@company.com" %>
+	<br>
+	
+<% end %>
+	<%= link_to 'Dashboard', :controller => 'dashboard', :action => 'index'%>
+<% end %>
+
+
+
+
+<%= yield %> 
+
+<br />
+
+    <h2>About Travel Web</h2>
+
+    <p> At Travel Web we tell it like it is, without fear or favour. There's a whole world of amazing sights, hotels, travel companies and gear manufacturers out there - and we want to tell you which ones we think are best. But we never compromise our opinions for commercial gain. If you read something written by a Lonely Planet author, you can guarantee they've been there, had a look for themselves and are telling you what they really think. It's trusted advice from a trusted source.
+
+ </p>
+    
+  </div>
+  <div id="footer">
+    <p>Copyright-2012</a></p>
+  </div>
+</div>
+<div align=center></div>
+</body>
+</html>

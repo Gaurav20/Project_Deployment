@@ -1,0 +1,22 @@
+class DashboardController < ApplicationController
+
+before_filter :authenticate_user!
+ 
+def index
+ # empty database
+Tweet.delete_all
+
+Tweet.get_latest
+
+@tweets= Tweet.all
+
+    
+
+end
+
+
+end
+
+
+
+
