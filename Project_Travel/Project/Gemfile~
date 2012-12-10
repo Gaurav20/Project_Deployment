@@ -10,8 +10,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'httparty'
 gem 'grackle'
-gem 'haml'
- gem 'mugen'
+
 
 
 
