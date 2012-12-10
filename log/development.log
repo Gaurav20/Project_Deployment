@@ -26293,3 +26293,18 @@ Served asset /images/bird.gif - 304 Not Modified (0ms)
 
 Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-07 18:04:44 +0000
 Served asset /images/logo.gif - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20121124221835)
+Migrating to CreatePlaces (20121125170444)
+Migrating to AddImageToPlaces (20121125170800)
+Migrating to CreateFlickrs (20121127202214)
+Migrating to CreateTweets (20121129110343)
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("flickrs")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("places")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tweets")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
