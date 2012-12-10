@@ -14,9 +14,8 @@
 ActiveRecord::Schema.define(:version => 20121129110343) do
 
   create_table "flickrs", :force => true do |t|
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
-    t.string   "Data",       :limit => nil
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "places", :force => true do |t|
@@ -33,9 +32,7 @@ ActiveRecord::Schema.define(:version => 20121129110343) do
   end
 
   create_table "tweets", :force => true do |t|
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
-    t.string   "content",    :limit => nil
+    t.string   "content"
     t.datetime "created"
   end
 
