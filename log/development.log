@@ -26311,3 +26311,152 @@ Migrating to CreateTweets (20121129110343)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-15 11:38:12 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (109.5ms)
+Compiled jquery.js  (3ms)  (pid 2617)
+Compiled jquery_ujs.js  (0ms)  (pid 2617)
+Compiled application.js  (299ms)  (pid 2617)
+Completed 200 OK in 1073ms (Views: 1069.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:13 +0000
+Served asset /application.css - 200 OK (116ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:13 +0000
+Served asset /dashboard.css - 200 OK (11ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /home.css - 200 OK (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /scaffolds.css - 200 OK (36ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /flickrs.css - 200 OK (19ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /places.css - 200 OK (19ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /style.css - 200 OK (23ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /jquery.js - 200 OK (135ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /jquery_ujs.js - 200 OK (20ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /dashboard.js - 200 OK (21ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /flickrs.js - 200 OK (6ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /home.js - 200 OK (6ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /places.js - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /application.js - 200 OK (115ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-15 11:38:14 +0000
+Served asset /property.jpg - 200 OK (294ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-15 11:38:15 +0000
+Served asset /images/pattern.gif - 200 OK (74ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-15 11:38:15 +0000
+Served asset /images/bg.png - 200 OK (26ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-15 11:38:15 +0000
+Served asset /images/logo.gif - 200 OK (22ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-15 11:38:15 +0000
+Served asset /images/bird.gif - 200 OK (19ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-12-15 11:38:23 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/wafuser/.rvm/gems/ruby-1.9.3-p194/gems/devise-2.1.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered /home/wafuser/.rvm/gems/ruby-1.9.3-p194/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (138.6ms)
+Completed 200 OK in 736ms (Views: 210.4ms | ActiveRecord: 44.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /flickrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /style.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /jquery.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /dashboard.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /flickrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
+Served asset /application.js - 304 Not Modified (15ms)
