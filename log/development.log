@@ -26460,3 +26460,680 @@ Served asset /places.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-15 11:38:25 +0000
 Served asset /application.js - 304 Not Modified (15ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/flickrs" for 127.0.0.1 at 2012-12-17 12:20:35 +0000
+Processing by FlickrsController#index as HTML
+Completed 401 Unauthorized in 108ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-12-17 12:20:35 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/wafuser/.rvm/gems/ruby-1.9.3-p194/gems/devise-2.1.2/app/views/devise/shared/_links.erb (2.1ms)
+  Rendered /home/wafuser/.rvm/gems/ruby-1.9.3-p194/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (206.1ms)
+Completed 200 OK in 1386ms (Views: 1071.0ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /application.css - 304 Not Modified (95ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /flickrs.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /dashboard.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /places.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /home.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /scaffolds.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /style.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /jquery.js - 200 OK (69ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /dashboard.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /flickrs.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /home.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /places.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:37 +0000
+Served asset /application.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 12:20:38 +0000
+Served asset /property.jpg - 304 Not Modified (23ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 12:20:38 +0000
+Served asset /images/pattern.gif - 304 Not Modified (110ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 12:20:38 +0000
+Served asset /images/bg.png - 304 Not Modified (49ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 12:20:38 +0000
+Served asset /images/logo.gif - 304 Not Modified (7ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 12:20:38 +0000
+Served asset /images/bird.gif - 304 Not Modified (30ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-12-17 12:20:49 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KUbO4lNe//6LmSCWnLI5gFntyywzawvqDjcca0wej5s=", "user"=>{"email"=>"admin@company.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@company.com' LIMIT 1[0m
+  [1m[35mTweet Exists (0.3ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-12-10 15:37:50') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (40.3ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "hello there this is dec 10 tweet"], ["created", Mon, 10 Dec 2012 15:37:50 UTC +00:00], ["created_at", Mon, 17 Dec 2012 12:20:50 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 12:20:50 UTC +00:00]]
+  [1m[36m (41.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mTweet Exists (0.3ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-11-29 18:20:21') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "API TEST"], ["created", Thu, 29 Nov 2012 18:20:21 UTC +00:00], ["created_at", Mon, 17 Dec 2012 12:20:50 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 12:20:50 UTC +00:00]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-12-07 17:55:02.627286', "current_sign_in_at" = '2012-12-17 12:20:50.427026', "sign_in_count" = 29, "updated_at" = '2012-12-17 12:20:50.428197' WHERE "users"."id" = 1[0m
+  [1m[35m (12.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/flickrs
+Completed 302 Found in 1213ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/flickrs" for 127.0.0.1 at 2012-12-17 12:20:50 +0000
+Processing by FlickrsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered flickrs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 863ms (Views: 66.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /flickrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /dashboard.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /flickrs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 12:20:51 +0000
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 12:20:52 +0000
+Served asset /images/pattern.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 12:20:52 +0000
+Served asset /property.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 12:20:52 +0000
+Served asset /images/bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 12:20:52 +0000
+Served asset /images/logo.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 12:20:52 +0000
+Served asset /images/bird.gif - 304 Not Modified (0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-12-17 12:21:59 +0000
+Processing by DashboardController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSQL (84.0ms)[0m  [1mDELETE FROM "tweets"[0m
+  [1m[35mTweet Exists (0.3ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-12-10 15:37:50') LIMIT 1
+  [1m[36m (3.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "hello there this is dec 10 tweet"], ["created", Mon, 10 Dec 2012 15:37:50 UTC +00:00], ["created_at", Mon, 17 Dec 2012 12:22:00 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 12:22:00 UTC +00:00]]
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mTweet Exists (0.2ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-11-29 18:20:21') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "API TEST"], ["created", Thu, 29 Nov 2012 18:20:21 UTC +00:00], ["created_at", Mon, 17 Dec 2012 12:22:00 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 12:22:00 UTC +00:00]]
+  [1m[36m (15.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets" 
+  Rendered dashboard/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 648ms (Views: 74.3ms | ActiveRecord: 124.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:00 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:00 +0000
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:00 +0000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:00 +0000
+Served asset /flickrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:00 +0000
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /dashboard.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /flickrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /images/pattern.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /property.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /images/bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /images/bird.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 12:22:01 +0000
+Served asset /images/logo.gif - 304 Not Modified (9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-12-17 12:22:45 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KUbO4lNe//6LmSCWnLI5gFntyywzawvqDjcca0wej5s="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 495ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 12:22:45 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /flickrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /dashboard.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /flickrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /home.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 12:22:46 +0000
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 12:22:47 +0000
+Served asset /images/pattern.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 12:22:47 +0000
+Served asset /property.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 12:22:47 +0000
+Served asset /images/bg.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 12:22:47 +0000
+Served asset /images/bird.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 12:22:47 +0000
+Served asset /images/logo.gif - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-12-17 15:23:23 +0000
+Processing by DashboardController#index as HTML
+Completed 401 Unauthorized in 100ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-12-17 15:23:23 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/wafuser/.rvm/gems/ruby-1.9.3-p194/gems/devise-2.1.2/app/views/devise/shared/_links.erb (2.6ms)
+  Rendered /home/wafuser/.rvm/gems/ruby-1.9.3-p194/gems/devise-2.1.2/app/views/devise/sessions/new.html.erb within layouts/application (226.0ms)
+Completed 200 OK in 762ms (Views: 534.1ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:24 +0000
+Served asset /application.css - 304 Not Modified (75ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:24 +0000
+Served asset /places.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:24 +0000
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /home.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /dashboard.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /flickrs.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /style.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /jquery.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /dashboard.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /flickrs.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /home.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /places.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /application.js - 304 Not Modified (80ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /property.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /images/pattern.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /images/bg.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /images/bird.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 15:23:25 +0000
+Served asset /images/logo.gif - 304 Not Modified (5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-12-17 15:23:32 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WdTaW6pwBRlg5WsQ7IBX129WJWYNsK2bFFdP4LHe5Ec=", "user"=>{"email"=>"admin@company.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (6.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@company.com' LIMIT 1[0m
+  [1m[35mTweet Exists (2.1ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-12-17 14:41:31') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "new tweet on dec 17"], ["created", Mon, 17 Dec 2012 14:41:31 UTC +00:00], ["created_at", Mon, 17 Dec 2012 15:23:33 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 15:23:33 UTC +00:00]]
+  [1m[36m (46.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mTweet Exists (0.3ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-12-10 15:37:50') LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "hello there this is dec 10 tweet"], ["created", Mon, 10 Dec 2012 15:37:50 UTC +00:00], ["created_at", Mon, 17 Dec 2012 15:23:33 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 15:23:33 UTC +00:00]]
+  [1m[36m (13.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mTweet Exists (0.5ms)[0m  SELECT 1 AS one FROM "tweets" WHERE (created='2012-11-29 18:20:21') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "API TEST"], ["created", Thu, 29 Nov 2012 18:20:21 UTC +00:00], ["created_at", Mon, 17 Dec 2012 15:23:33 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 15:23:33 UTC +00:00]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-12-17 12:20:50.427026', "current_sign_in_at" = '2012-12-17 15:23:33.581392', "sign_in_count" = 30, "updated_at" = '2012-12-17 15:23:33.586742' WHERE "users"."id" = 1[0m
+  [1m[35m (17.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1261ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2012-12-17 15:23:33 +0000
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (12.9ms)[0m  DELETE FROM "tweets"
+  [1m[36mTweet Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "tweets" WHERE (created='2012-12-17 14:41:31') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "new tweet on dec 17"], ["created", Mon, 17 Dec 2012 14:41:31 UTC +00:00], ["created_at", Mon, 17 Dec 2012 15:23:34 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 15:23:34 UTC +00:00]]
+  [1m[35m (16.4ms)[0m  commit transaction
+  [1m[36mTweet Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "tweets" WHERE (created='2012-12-10 15:37:50') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "hello there this is dec 10 tweet"], ["created", Mon, 10 Dec 2012 15:37:50 UTC +00:00], ["created_at", Mon, 17 Dec 2012 15:23:34 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 15:23:34 UTC +00:00]]
+  [1m[35m (16.8ms)[0m  commit transaction
+  [1m[36mTweet Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "tweets" WHERE (created='2012-11-29 18:20:21') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "tweets" ("content", "created", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "API TEST"], ["created", Thu, 29 Nov 2012 18:20:21 UTC +00:00], ["created_at", Mon, 17 Dec 2012 15:23:34 UTC +00:00], ["updated_at", Mon, 17 Dec 2012 15:23:34 UTC +00:00]]
+  [1m[35m (22.2ms)[0m  commit transaction
+  [1m[36mTweet Load (0.3ms)[0m  [1mSELECT "tweets".* FROM "tweets" [0m
+  Rendered dashboard/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 587ms (Views: 45.3ms | ActiveRecord: 72.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /dashboard.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /flickrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /dashboard.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /flickrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /places.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:34 +0000
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 15:23:35 +0000
+Served asset /images/pattern.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 15:23:35 +0000
+Served asset /property.jpg - 304 Not Modified (10ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 15:23:35 +0000
+Served asset /images/bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 15:23:35 +0000
+Served asset /images/bird.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 15:23:35 +0000
+Served asset /images/logo.gif - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2012-12-17 15:23:40 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WdTaW6pwBRlg5WsQ7IBX129WJWYNsK2bFFdP4LHe5Ec="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (2.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 15:23:40 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/flickrs.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /flickrs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /dashboard.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /style.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /jquery.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /dashboard.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flickrs.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /flickrs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 15:23:41 +0000
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/images/pattern.gif" for 127.0.0.1 at 2012-12-17 15:23:42 +0000
+Served asset /images/pattern.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/property.jpg" for 127.0.0.1 at 2012-12-17 15:23:42 +0000
+Served asset /property.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bg.png" for 127.0.0.1 at 2012-12-17 15:23:42 +0000
+Served asset /images/bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/bird.gif" for 127.0.0.1 at 2012-12-17 15:23:42 +0000
+Served asset /images/bird.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/logo.gif" for 127.0.0.1 at 2012-12-17 15:23:42 +0000
+Served asset /images/logo.gif - 304 Not Modified (0ms)
